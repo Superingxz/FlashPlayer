@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <WebView
+    	android:id="@+id/flash_web_view_7488"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentTop="true"
+    	android:layout_marginRight="0dip"
+    	android:scrollbars="none"/>
+
+	<LinearLayout
+   		android:id="@+id/flash_back_layout_7493"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentBottom="true"
+    	android:background="#ffacfeb6"
+    	android:orientation="horizontal"
+    	android:gravity="center"
+        android:layout_marginBottom="0dip">
+		
+		<ImageButton
+   			android:id="@+id/flash_button_stop_7494"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="10dip"
+    		android:background="#00000000"
+    		android:src="@drawable/stop"/>
+
+    	<ImageButton
+   			android:id="@+id/flash_button_play_7495"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="10dip"
+    		android:background="#00000000"
+    		android:src="@drawable/play"/>
+    	
+   		<ProgressBar
+			android:id="@+id/flash_play_progress_7491"
+        	style="?android:attr/progressBarStyleHorizontal"
+        	android:layout_width="wrap_content"
+        	android:layout_height="10dip"
+        	android:layout_above="@+id/flash_linear_layout_7489"
+        	android:layout_alignLeft="@+id/flash_linear_layout_7489"
+        	android:indeterminate="false"
+        	android:progressDrawable="@drawable/seekbar_style"
+    		android:layout_marginRight="10dip"
+        	android:max="500"/>
+    	
+    	<ImageView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginRight="0dip"
+    		android:src="@drawable/sound"/>
+    	
+    	<SeekBar
+			android:id="@+id/flash_sound_progress_7492"
+        	style="?android:attr/progressBarStyleHorizontal"
+        	android:layout_width="120dip"
+        	android:layout_height="wrap_content"
+        	android:indeterminate="false"
+        	android:progressDrawable="@drawable/seekbar_style"/>
+    
+    </LinearLayout>
+
+</RelativeLayout>
